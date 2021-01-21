@@ -7,7 +7,20 @@
 		<key>TheSocialNetwork.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EC3C6BF325B8A63F004416C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECFE21DF25B5C40D00B27DA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

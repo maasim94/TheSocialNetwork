@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="65E-Xs-noT" customClass="CommentsTableViewCell" customModule="TheSocialNetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="65E-Xs-noT" id="gez-Ue-456">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEU-N1-jfd" customClass="RoundedShadowView" customModule="TheSocialNetwork" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="394" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE1-Re-b5d">
+                                <rect key="frame" x="25" y="10" width="344" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kE1-Re-b5d" secondAttribute="bottom" constant="10" id="0z7-3j-07G"/>
+                            <constraint firstAttribute="trailing" secondItem="kE1-Re-b5d" secondAttribute="trailing" constant="25" id="2wl-6S-e4o"/>
+                            <constraint firstItem="kE1-Re-b5d" firstAttribute="top" secondItem="SEU-N1-jfd" secondAttribute="top" constant="10" id="Da2-bZ-Z82"/>
+                            <constraint firstItem="kE1-Re-b5d" firstAttribute="leading" secondItem="SEU-N1-jfd" secondAttribute="leading" constant="25" id="uSZ-5K-cNi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SEU-N1-jfd" firstAttribute="leading" secondItem="gez-Ue-456" secondAttribute="leading" constant="10" id="LRV-b2-FBr"/>
+                    <constraint firstItem="SEU-N1-jfd" firstAttribute="top" secondItem="gez-Ue-456" secondAttribute="top" constant="5" id="Wib-T7-gOg"/>
+                    <constraint firstAttribute="bottom" secondItem="SEU-N1-jfd" secondAttribute="bottom" constant="5" id="cWL-tN-SaG"/>
+                    <constraint firstAttribute="trailing" secondItem="SEU-N1-jfd" secondAttribute="trailing" constant="10" id="idG-sK-9tb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellTitle" destination="kE1-Re-b5d" id="fcf-of-T8l"/>
+            </connections>
+            <point key="canvasLocation" x="-349.27536231884062" y="-370.10869565217394"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
